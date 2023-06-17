@@ -44,8 +44,8 @@ function StartEarning() {
 
                 <Swiper
                     loop
-                    autoplay={{ delay: 11000 }}
-                    speed={1000}
+                    // autoplay={{ delay: 11000 }}
+                    // speed={1000}
                     slidesPerView={1}
                 >
                     {

@@ -20,18 +20,18 @@ function Footer() {
                     <Image src={logo} width={100} height={50} alt='logo' />
                 </div>
                 <div className="row">
-                    <div className="col-3 footer-col">
+                    <div className="col-lg-3 col-sm-4 col-md-2  footer-col">
                         <h6>COMPANY</h6>
                         <Link href="/" className='footer-links'>About Us</Link>
                         <Link href="/" className='footer-links'>Partner with us</Link>
                         <Link href="/" className='footer-links'>Blog</Link>
                     </div>
-                    <div className="col-3 footer-col">
+                    <div className="col-lg-3 col-sm-4 col-md-2  footer-col">
                         <h6>LEGAL</h6>
                         <Link href="/" className='footer-links'>Privacy Policy</Link>
                         <Link href="/" className='footer-links'>Terms of Use</Link>
                     </div>
-                    <div className="col-3 footer-col">
+                    <div className="col-lg-3 col-sm-4 col-md-3  footer-col">
                         <h6>CONTACT</h6>
                         <Link href="/" className='footer-links'>
                             <Image src={email} alt='email' />
@@ -42,7 +42,7 @@ function Footer() {
                             +91-7417274072
                         </Link>
                     </div>
-                    <div className="col-3 footer-col">
+                    <div className="col-lg-3 col-sm-4 col-md-5 footer-col">
                         <h6>SOCIAL</h6>
                         <div className='social'>
                             <Link href="/" className='social-links'>

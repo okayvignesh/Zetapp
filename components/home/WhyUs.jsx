@@ -45,20 +45,20 @@ const points = [
 function WhyUs() {
     return (
         <section className='whyus container'>
-            <div  className="row px-5">
-                <div className="col-3 whyus-col">
+            <div  className="row px-5 whyus-flex">
+                <div className="col-lg-3 col-sm-12 whyus-col">
                     <Image src={bg} alt='bg' className='stripe-bg' />
                     <h5>Why<span className='darktext'> Choose Us</span></h5>
                     <p>Why we are loved by our customers</p>
                     <Image src={img} alt='whyus-img' />
                 </div>
-                <div data-aos="fade-up" className="col-9">
+                <div data-aos="fade-up" className="col-lg-9 col-sm-12">
                     <div className="row d-flex justify-content-center">
 
                         {
                             points.map((value, index) => {
                                 return (
-                                    <div className="col-5 whyus-points" key={index}>
+                                    <div className="col-lg-5 col-sm-12 col-md-4 whyus-points" key={index}>
                                         <Image src={value.img} width={90} alt='-' height={120} />
                                         <h6>{value.heading}</h6>
                                         <p>{value.content}</p>

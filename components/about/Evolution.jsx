@@ -6,7 +6,9 @@ function Evolution() {
     return (
         <section className='evolution container'>
             <h1>How we evolved over the years</h1>
-            <Image src={growth} alt='growth' className='growth-img'/>
+            <div className="evolution-img">
+                <Image src={growth} alt='growth' className='growth-img'/>
+            </div>
         </section>
     )
 }
