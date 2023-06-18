@@ -2,13 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import logo from '../../public/images/logo.svg'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 function Navbar() {
-    const router = useRouter();
+    const path = usePathname();
+
 
     const isActive = (pathname) => {
-        return router.pathname === pathname ? 'active' : '';
+        return path === pathname ? 'active' : '';
     };
 
     return (

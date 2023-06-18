@@ -12,59 +12,76 @@ import per5 from '../../public/images/investors/person5.webp'
 import per6 from '../../public/images/investors/person6.webp'
 import per7 from '../../public/images/investors/person7.webp'
 import per8 from '../../public/images/investors/person8.webp'
+import Card from '../home/Card'
 
 function Investors() {
     return (
         <section className='investors'>
             <h1>Meet the Investors</h1>
             <div data-aos="fade-up" className="d-flex justify-content-around investor-flex">
-                <Image src={img1} className="investor-image" width={200} height={100} />
-                <Image src={img2} className="investor-image" width={200} height={100} />
-                <Image src={img3} className="investor-image" width={200} height={100} />
-                <Image src={img4} className="investor-image" width={200} height={100} />
+                <Image src={img1} alt='-' className="investor-image" width={200} height={100} />
+                <Image src={img2} alt='-' className="investor-image" width={200} height={100} />
+                <Image src={img3} alt='-' className="investor-image" width={200} height={100} />
+                <Image src={img4} alt='-' className="investor-image" width={200} height={100} />
             </div>
 
             <div className="row d-flex justify-content-center">
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per1} alt='-' width={200} height={175} />
-                    <p className='m-0'>Kunal Shah</p>
-                    <p className='text-muted'>Founder, CRED</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per2} alt='-' width={200} height={175} />
-                    <p className='m-0'>Gaurav Munjal</p>
-                    <p className='text-muted'>Founder, UNACADEMY</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per3} alt='-' width={200} height={175} />
-                    <p className='m-0'>Aakrit Vaish</p>
-                    <p className='text-muted'>Co-Founder, HAPTIK</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per4} alt='-' width={200} height={175} />
-                    <p className='m-0'>Harshil Mathur</p>
-                    <p className='text-muted'>Founder, RAZORPAY</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per5} alt='-' width={200} height={175} />
-                    <p className='m-0'>Vidit Aatrey</p>
-                    <p className='text-muted'>Founder & CEO, MEESHO</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per6} alt='-' width={200} height={175} />
-                    <p className='m-0'>Amrish Rau</p>
-                    <p className='text-muted'>CEO, PINELABS</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per7} alt='-' width={200} height={175} />
-                    <p className='m-0'>Lalit Keshre</p>
-                    <p className='text-muted'>CEO, GROWW</p>
-                </div>
-                <div className="investor-profile col-lg-3 col-sm-6 col-md-3">
-                    <Image src={per8} alt='-' width={200} height={175} />
-                    <p className='m-0'>Gokul Rajaram</p>
-                    <p className='text-muted'>Product, DOORDASH</p>
-                </div>
+                <Card className="col-lg-3 col-sm-6 col-md-3">
+                    <div className="investor-profile ">
+                        <Image src={per1} alt='-' width={200} height={175} />
+                        <p className='m-0'>Kunal Shah</p>
+                        <p className='text-muted'>Founder, CRED</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile ">
+                        <Image src={per2} alt='-' width={200} height={175} />
+                        <p className='m-0'>Gaurav Munjal</p>
+                        <p className='text-muted'>Founder, UNACADEMY</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per3} alt='-' width={200} height={175} />
+                        <p className='m-0'>Aakrit Vaish</p>
+                        <p className='text-muted'>Co-Founder, HAPTIK</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per4} alt='-' width={200} height={175} />
+                        <p className='m-0'>Harshil Mathur</p>
+                        <p className='text-muted'>Founder, RAZORPAY</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per5} alt='-' width={200} height={175} />
+                        <p className='m-0'>Vidit Aatrey</p>
+                        <p className='text-muted'>Founder & CEO, MEESHO</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per6} alt='-' width={200} height={175} />
+                        <p className='m-0'>Amrish Rau</p>
+                        <p className='text-muted'>CEO, PINELABS</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per7} alt='-' width={200} height={175} />
+                        <p className='m-0'>Lalit Keshre</p>
+                        <p className='text-muted'>CEO, GROWW</p>
+                    </div>
+                </Card>
+                <Card className='col-lg-3 col-sm-6 col-md-3'>
+                    <div className="investor-profile">
+                        <Image src={per8} alt='-' width={200} height={175} />
+                        <p className='m-0'>Gokul Rajaram</p>
+                        <p className='text-muted'>Product, DOORDASH</p>
+                    </div>
+                </Card>
             </div>
 
         </section>

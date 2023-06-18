@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import banner from '../../public/images/aboutbanner.webp'
+import { useState } from 'react';
 
 function Banner() {
     return (

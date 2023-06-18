@@ -50,6 +50,7 @@
         padding: 2rem;
 
         .product-card {
+            width: 100%;
             margin: 1rem 0rem;
             padding: 1rem 1.5rem;
             flex-direction: column;
@@ -273,8 +274,11 @@
             margin: 1rem 0rem;
         }
 
-        .investor-profile {
+        .col-sm-6 {
             width: 50%;
+        }
+
+        .investor-profile {
             justify-content: start;
             margin: 1.5rem 0rem;
 
@@ -291,6 +295,7 @@
                 font-size: 12px;
             }
         }
+
     }
 
     .founders {
@@ -304,7 +309,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
+@media (min-width: 601px) and (max-width: 990px) {
 
     .global-navbar {
         .navbar {
@@ -345,7 +350,7 @@
         }
 
         .product-card {
-            width: 45%;
+            width: 100%;
             margin: 0.5rem;
             text-align: center;
             height: fit-content;

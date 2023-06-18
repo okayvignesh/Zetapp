@@ -148,7 +148,6 @@
             }
 
 
-            transform: scale(1.03);
 
             box-shadow: rgba(0, 16, 60, 0.03) 3px 3px 18px 0px;
         }
@@ -479,6 +478,16 @@
         object-fit: cover;
     }
 
+    .card {
+        height: 200px;
+        width: 200px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+    }
+
     .aboutus-text {
         position: absolute;
         top: 50%;
@@ -621,4 +630,10 @@
 .bottomimg {
     width: 100%;
     height: auto;
+}
+
+.movecard {
+    width: fit-content !important;
+    background-color: transparent;
+
 }
